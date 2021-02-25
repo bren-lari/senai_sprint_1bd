@@ -1,6 +1,9 @@
 
 -- caso eu queira ir para algum BD específico,
 -- uso o USE
+
+CREATE DATABASE Pessoa;
+
 USE Pessoas;
 
 CREATE TABLE Pessoa
@@ -12,6 +15,7 @@ CREATE TABLE Pessoa
 
 );
 
+
 CREATE TABLE Telefone
 (
 	idTelefone	INT PRIMARY KEY IDENTITY,
@@ -19,6 +23,7 @@ CREATE TABLE Telefone
 	Numero		BIGINT NOT NULL,
 	Tipo		VARCHAR(20) NOT NULL,
 );
+
 
 CREATE TABLE Email
 (
@@ -29,6 +34,7 @@ CREATE TABLE Email
 
 );
 
+
 CREATE TABLE CNH
 (
 	idCNH	INT PRIMARY KEY IDENTITY,
@@ -36,5 +42,6 @@ CREATE TABLE CNH
 	Numero	 INT,
 );
 
--- fim da criação das tabelos do exercício "Pessoas"--
+
+-- fim da criação das tabelas do exercício "Pessoas"--
 

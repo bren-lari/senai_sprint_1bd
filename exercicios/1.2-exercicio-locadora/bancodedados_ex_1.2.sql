@@ -13,9 +13,9 @@ CREATE TABLE Empresa
 CREATE TABLE Veiculo
 (
 	idVeiculo	INT PRIMARY KEY IDENTITY,
-	idEmpresa	INT FOREIGN KEY REFERENCES Empresa(idEmpresa),
+	idEmpresa	INT FOREIGN KEY REFERENCES Empresa(idEmpresa) NOT NULL,
 	Placa		VARCHAR(20) NOT NULL,
-	AnoDeLancamento		DATE NOT NULL,
+	AnoDeLancamento		VARCHAR(30) NOT NULL,
 );
 
 CREATE TABLE Cliente
