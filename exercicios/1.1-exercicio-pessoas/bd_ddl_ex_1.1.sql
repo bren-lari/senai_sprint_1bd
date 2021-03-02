@@ -1,4 +1,4 @@
-s
+
 USE Pessoas;
 
 CREATE TABLE Pessoa
