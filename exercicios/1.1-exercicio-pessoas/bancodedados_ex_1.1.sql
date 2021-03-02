@@ -9,7 +9,7 @@ USE Pessoas;
 CREATE TABLE Pessoa
 (
 	idPessoa INT PRIMARY KEY IDENTITY,
-	Nome	 VARCHAR(255) NOT NULL,
+	Nome	 VARCHAR(255),
 	Idade	 INT,
 
 
@@ -20,7 +20,7 @@ CREATE TABLE Telefone
 (
 	idTelefone	INT PRIMARY KEY IDENTITY,
 	idPessoa	INT FOREIGN KEY REFERENCES Pessoa(idPessoa),
-	Numero		BIGINT NOT NULL,
+	Numero		VARCHAR(9) NOT NULL,
 	Tipo		VARCHAR(20) NOT NULL,
 );
 
