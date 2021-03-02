@@ -1,7 +1,3 @@
-
--- caso eu queira ir para algum BD específico,
--- uso o USE
-
 CREATE DATABASE Pessoa;
 
 USE Pessoas;
@@ -41,7 +37,4 @@ CREATE TABLE CNH
 	idPessoa INT FOREIGN KEY REFERENCES Pessoa(idPessoa),
 	Numero	 INT,
 );
-
-
--- fim da criação das tabelas do exercício "Pessoas"--
 
